@@ -1,0 +1,32 @@
+<section>
+  <div>
+    <%= render "partials/back" %>
+    <h2>Categories</h2>
+    <%= button_to 'Log Out', destroy_user_session_path, method: :delete %>
+  </div>
+
+  <div>
+    <% if @groups.empty? %>
+      <h3>No records found!</h3>
+    <% else %>
+      <% @groups.each do |group| %>
+        <%= link_to group_entities_path(group) do %>
+          <div class="img-con ">
+            <% if group.icon.attached? %>
+              <img src="<%= (url_for(group.icon))%>", class: "group_icon", size: "115x120", alt="User Image">
+            <% end %>
+          </div>
+
+          <div>
+            <h3><%= group.name.capitalize %></h3>
+            <p>$<%= group.entities.sum(:amount)%></p>
+          </div>
+        <% end %>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div>
+    <%= link_to "ADD CATEGORY", new_group_path %>
+  </div>
+</section>

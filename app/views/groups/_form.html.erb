@@ -1,0 +1,31 @@
+<section>
+  <div>
+    <%= link_to "<", groups_path %>
+    <h2>NEW CATEGORY</h2>
+  </div>
+
+  <div>
+    <%= form_with(model: group) do |form| %>
+      <div>
+
+        <div>
+          <%= form.number_field :author_id, id: :group_author_id, value: current_user.id, type: :hidden %>
+        </div>
+
+        <div>
+          <% form.label :name, style: "display: block" %>
+          <%= form.text_field :name, autofocus: true, placeholder: 'Name' %>
+        </div>
+
+        <div>
+          <% form.label :icon, style: "display: block" %>
+          <%= form.file_field :icon, class: 'btn btn-outline-light p-0'%>
+        </div>
+
+        <div>
+          <%= form.submit value: 'Submit', class: 'btn btn-primary' %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</section>

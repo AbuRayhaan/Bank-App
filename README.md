@@ -1,3 +1,3 @@
-# Bank-App
-A Mobile Banking App
+# Bank App
 
+A Mobile Banking App
