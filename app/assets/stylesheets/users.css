@@ -1,4 +1,108 @@
-.group_icon {
-  width: 10px;
-  height: 15px
+a {
+  text-decoration: none;
+  
+}
+
+body {
+  background-color: rgb(241, 241, 241);
+
+}
+
+.nav-grp {
+  justify-content: space-around;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.home {
+  flex-direction: column;
+  margin-top: 180px;
+  align-items: center;
+  gap: 40px;
+}
+
+.bg-home {
+  background: #f5f6f8;
+}
+
+.home-name {
+  font-size: 48px;
+}
+
+.img-con {
+  width: 4.75rem;
+  height: 4.75rem;
+}
+
+.grp-con {
+  margin-top: 20px;
+  gap: 70px;
+}
+
+.grp-menu {
+  gap: 45px;
+}
+
+.grp-item {
+  gap: 50px;
+  box-shadow: 5px 5px 10px;
+}
+
+.grp-icon {
+  width: 30px;
+  height: 25px;
+}
+
+.grp-details {
+  gap: 30px;
+  justify-content: space-between;
+}
+
+.grp-sum {
+  gap: 30px;
+  justify-content: flex-end;
+}
+
+.grp-add {
+  display: flex;
+  background-color: #41af19;
+  width: 100%;
+  padding: 25px;
+  justify-content: center;
+}
+
+.grp-add-btn {
+  color: white;
+  font-weight: bolder;
+  border: solid 1px white;
+  padding: 20px;
+  font-size: 16px;
+}
+
+.grp-add-btn:hover {
+  color: yellow;
+  font-weight: bolder;
+  border: solid 5px yellow;
+  padding: 20px;
+}
+
+.new-grp {
+  margin-top: 50px;
+}
+
+.form-grp {
+  gap: 30px;
+}
+
+.ent-con {
+  margin-top: 30px;
+}
+
+footer {
+  position: Fixed;
+  background-color: #fff;
 }
