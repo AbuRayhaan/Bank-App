@@ -1,9 +1,23 @@
-<section>
-<h1>Fulus Bank</h1>
+<section class="home d-flex">
+  <div class="text-center">
+    <h1 class="home-name fw-bold">Fulus Bank</h1>
+    <p class="fw-italic"> Thank you for banking with us</p>
+  </div>
 
-<h3> Thank you for banking with us</h3>
-<div class="splash">
-  <%= link_to "LOG IN", new_user_session_path %>
-  <%= link_to "SIGN UP", new_user_registration_path %>
-</div>
+  <div class="splash">
+    <% if user_signed_in? %>
+      <div>
+        <%= link_to "CONTINUE", groups_path(current_user), class: 'fw-bold'%>
+        <%= button_to "LOGOUT", destroy_user_session_path, method: :delete, class:"btn-bold" %>
+      </div>
+    <% else %>
+      <div class="mb-3 container-sm">
+        <%= link_to "LOG IN", new_user_session_path, class: 'white-color form-control btn btn-primary home-btn' %>
+      </div>
+     
+      <div class="container-sm">
+        <%= link_to "SIGN UP", new_user_registration_path, class: 'white-color form-control btn btn-primary w100' %>
+      </div>
+    <% end %>
+  </div>
 </section>

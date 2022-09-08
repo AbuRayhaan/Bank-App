@@ -1,32 +1,33 @@
-<section>
-  <div>
-    <%= render "partials/back" %>
-    <h2>Categories</h2>
-    <%= button_to 'Log Out', destroy_user_session_path, method: :delete %>
-  </div>
+<%= render 'partials/navgrp' %>
 
-  <div>
+<section class="grp-con d-flex flex-column align-items-center justify-content-center">
+  <div class="grp-menu d-flex flex-column">
     <% if @groups.empty? %>
       <h3>No records found!</h3>
     <% else %>
       <% @groups.each do |group| %>
         <%= link_to group_entities_path(group) do %>
-          <div class="img-con ">
-            <% if group.icon.attached? %>
-              <img src="<%= (url_for(group.icon))%>", class: "group_icon", size: "115x120", alt="User Image">
-            <% end %>
-          </div>
+          <div class="grp-item d-flex align-items-center g-20">
+            <div class="img-con">
+              <% if group.icon.attached? %>
+                <img src="<%= (url_for(group.icon))%>", class: "grp-icon", alt="User Image">
+              <% end %>
+            </div>
 
-          <div>
-            <h3><%= group.name.capitalize %></h3>
-            <p>$<%= group.entities.sum(:amount)%></p>
+            <div class="grp-details d-flex">
+              <h3><%= group.name.capitalize %></h3>
+            </div>
+
+            <div class="grp-sum d-flex">
+              <p>$<%= group.entities.sum(:amount)%></p>
+            </div>
           </div>
         <% end %>
       <% end %>
     <% end %>
   </div>
 
-  <div>
-    <%= link_to "ADD CATEGORY", new_group_path %>
+  <div class="grp-add">
+    <%= link_to "ADD CATEGORY", new_group_path, class:"grp-add-btn" %>
   </div>
 </section>
