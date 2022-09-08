@@ -10,7 +10,7 @@ RSpec.describe User, type: :model do
       @user.save
       expect(@user).to be_valid
     end
-  
+
     it 'is not valid without a name' do
       @user.name = nil
       @user.save
