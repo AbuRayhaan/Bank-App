@@ -8,6 +8,24 @@ body {
 
 }
 
+.new-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 20px;
+}
+
+.new-form input[type="submit"] {
+  border: none;
+  color: var(--text-color-dark);
+}
+
+.new-form input {
+  border: none;
+  border-bottom: 1px solid var(--text-color-dark);
+  padding: 10px;
+}
+
 .nav-grp {
   justify-content: space-around;
   margin-top: 15px;
