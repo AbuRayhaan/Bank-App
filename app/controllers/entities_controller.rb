@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 class EntitiesController < ApplicationController
   before_action :authenticate_user!
-  
+
   def index
     @group = Group.find(params[:group_id])
     @entities = current_user.entities
