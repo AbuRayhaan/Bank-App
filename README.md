@@ -14,6 +14,26 @@ A Mobile Banking App
 
 ## [Live Demo Link](https://dry-atoll-56266.herokuapp.com/)
 
+- Home Page
+
+![image](https://user-images.githubusercontent.com/91697183/189432451-66e49bc4-d24d-423a-badc-72809f6039f4.png)
+
+- Category Page
+
+![image](https://user-images.githubusercontent.com/91697183/189435911-4f2f7212-abe9-465a-9171-39296a80503f.png)
+
+- New Category Page
+
+![image](https://user-images.githubusercontent.com/91697183/189436255-c1b49560-6983-407a-9e3c-9ba939ef5611.png)
+
+- Transaction Page
+
+![image](https://user-images.githubusercontent.com/91697183/189436336-27e34123-fef7-43cd-a780-14a42be6ec19.png)
+
+- New Transaction Page
+
+![image](https://user-images.githubusercontent.com/91697183/189436561-eca20b8c-4f2d-4048-863c-d3c706e95849.png)
+
 ## Getting Started
 
 - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local machine
