@@ -12,7 +12,7 @@ A Mobile Banking App
 - Ruby on Rails
 - PostgreSQL
 
-## Live Demo Link https://dry-atoll-56266.herokuapp.com/
+## [Live Demo Link](https://dry-atoll-56266.herokuapp.com/)
 
 ## Getting Started
 
