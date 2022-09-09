@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'groups/index', type: :feature do
   before :each do
     @user = User.create(name: 'Hammed', email: 'hammed@tst.co', password: 'abc@123', password_confirmation: 'abc@123')
-    @group = Group.new(name: 'Group 1', icon: Rack::Test::UploadedFile.new('spec/support/avatal.jpg'), user_id: @user.id)
+    @group = Group.new(name: 'Group1', icon: Rack::Test::UploadedFile.new('spec/support/avatal.jpg'), user_id: @user.id)
   end
 
   it 'should add new group' do
