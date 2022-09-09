@@ -1,0 +1,5 @@
+<nav class="d-flex nav-grp navbar">
+  <%= render "partials/back" %>
+
+  <%= button_to "LOGOUT", destroy_user_session_path, method: :delete, class:"btn-bold" %>
+</nav>
