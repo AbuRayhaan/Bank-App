@@ -4,7 +4,7 @@ A Mobile Banking App
 
 ### ORM Diagram:
 
-![diagram](https://github.com/microverseinc/curriculum-rails/blob/main/recipe-app/images/recipe_erd_2_members.png)
+![diagram](https://user-images.githubusercontent.com/91697183/189308941-91fa037b-06e7-467f-827a-74951ac0e0f8.png)
 
 ## Built With
 
@@ -19,7 +19,7 @@ A Mobile Banking App
 
 - [Install Ruby](https://www.ruby-lang.org/en/documentation/installation/) on your local machine
 - [Install Ruby on Rails](https://guides.rubyonrails.org/v5.1/getting_started.html)
-- git Clone `https://github.com/ramrod433/Ruby-on-Rails-Recipe-App.git`
+- git Clone `https://github.com/AbuRayhaan/Bank-App.git`
 - To get started, In the root directory run:
 
   ```
@@ -64,7 +64,7 @@ rubocop
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/ramrod433/Ruby-on-Rails-Recipe-App.git/issues).
+Feel free to check the [issues page](https://github.com/AbuRayhaan/Bank-App/issues).
 
 ## Show your support
 
