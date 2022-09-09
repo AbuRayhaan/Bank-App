@@ -2,7 +2,7 @@
 
 <section class="ent-con d-flex flex-column align-items-center">
   <div>
-    <h2>Transactions</h2>
+    <h5 class="text-center mt-4">Total spend for <%= @group.name %> : $<%= @group.entities.sum(:amount) %></h5>
   </div>
   
   <div>
@@ -16,10 +16,10 @@
         </tr>
       </thead>
       <tbody>
-        <% if @entities.empty? %>
+        <% if @group.entities.empty? %>
           <h3>No records found!</h3>
         <% else %>
-          <% @entities.each do |t| %>
+          <% @group.entities.each do |t| %>
             <tr>
             <td><%= t.created_at.strftime("%d-%b-%Y") %></td>
             <td><%= t.name %></td>

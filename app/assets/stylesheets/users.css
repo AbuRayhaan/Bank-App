@@ -73,6 +73,7 @@ body {
   gap: 50px;
   background-color: #fff;
   border: solid 1px rgb(173, 172, 172);
+  justify-content: space-around;
 }
 
 .grp-icon {

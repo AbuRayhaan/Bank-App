@@ -1,9 +1,5 @@
 <nav class="d-flex nav-grp align-items-center">
-  <%= link_to "<Back", groups_path %>
-
-  <% if user_signed_in? %>
-    <h4>Hi, <%= current_user.name %></h4>
-  <% end %>
+  <%= link_to "<Back", groups_path, class: "nav-back" %>
 
   <%= button_to "LOGOUT", destroy_user_session_path, method: :delete, class:"btn-bold" %>
 </nav>
