@@ -1,11 +1,9 @@
 a {
   text-decoration: none;
-  
 }
 
 body {
   background-color: rgb(241, 241, 241);
-
 }
 
 .new-form {
@@ -121,6 +119,6 @@ body {
 }
 
 footer {
-  position: Fixed;
+  position: fixed;
   background-color: #fff;
 }
