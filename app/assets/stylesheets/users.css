@@ -25,9 +25,15 @@ body {
 }
 
 .nav-grp {
-  justify-content: space-around;
-  margin-top: 15px;
+  justify-content: space-between;
+  padding: 15px;
   align-items: center;
+  background-color: rgb(26, 26, 212);
+}
+
+.nav-back {
+  color: white;
+  font-weight: bold;
 }
 
 .d-flex {
@@ -55,7 +61,7 @@ body {
 }
 
 .grp-con {
-  margin-top: 20px;
+  margin: 20px 0;
   gap: 70px;
 }
 
@@ -65,7 +71,8 @@ body {
 
 .grp-item {
   gap: 50px;
-  box-shadow: 5px 5px 10px;
+  background-color: #fff;
+  border: solid 1px rgb(173, 172, 172);
 }
 
 .grp-icon {
@@ -121,4 +128,5 @@ body {
 footer {
   position: fixed;
   background-color: #fff;
+  bottom: 0;
 }
